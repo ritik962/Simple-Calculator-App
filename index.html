@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caluculator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input-container">
+        <input type="text" class="input" id="input" readonly/>
+      </div>
+      <div class="numbers">
+        <button  onclick="clearDisplay()" class="btn operator allclear">AC</button>
+        <button onclick="deleteValue()" class="btn operator clear">C</button>
+        <button onclick="appendToDisplay('%')" class="btn operator">%</button>
+        <button onclick="appendToDisplay('*')" class="btn operator">*</button>
+        <button onclick="appendToDisplay('7')" class="btn num7">7</button>
+        <button onclick="appendToDisplay('8')" class="btn num8">8</button>
+        <button onclick="appendToDisplay('9')" class="btn num9">9</button>
+        <button onclick="appendToDisplay('/')" class="btn operator">/</button>
+        <button onclick="appendToDisplay('4')" class="btn num4">4</button>
+        <button onclick="appendToDisplay('5')" class="btn num5">5</button>
+        <button onclick="appendToDisplay('6')" class="btn num6">6</button>
+        <button onclick="appendToDisplay('-')" class="btn operator">-</button>
+        <button onclick="appendToDisplay('1')" class="btn num1">1</button>
+        <button onclick="appendToDisplay('2')" class="btn num2">2</button>
+        <button onclick="appendToDisplay('3')" class="btn num3">3</button>
+        <button onclick="appendToDisplay('+')" class="btn operator">+</button>
+        <button onclick="appendToDisplay('0')" class="btn zero-span2">0</button>
+        <button onclick="appendToDisplay('.')" class="btn decimal">.</button>
+        <button onclick="calculate()" class="btn operator equalto">=</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

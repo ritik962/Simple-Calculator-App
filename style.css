@@ -1,0 +1,94 @@
+:root {
+  --shadow-color: #bebebe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  /* background: linear-gradient(to right, crimson, blue, teal); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 500px;
+  background-color: black;
+  padding: 2rem 1rem;
+  border-radius: 1em;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--shadow-color);
+}
+
+.wrapper .input-container {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.input-container .input {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  color: lavender;
+  outline: none;
+  border: 2px solid white;
+  font-size: 3rem;
+  padding: 1rem 0.5rem;
+
+}
+
+.numbers {
+  border: 2px solid white;
+  width: 100%;
+  /* background-color: red; */
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-template-rows: repeat(5, minmax(80px, 1fr));
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border: none;
+  outline: 2px solid #bebebe;
+  color: white;
+  font-size: 2.5rem;
+  transition: box-shadow 0.4s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: inset 100px 100px 200px rgba(255, 255, 255, 0.4);
+}
+
+.btn:active {
+  transform: scale(1.025);
+}
+
+.btn.zero-span2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.btn.allclear {
+  background: rgba(255, 0, 0, 0.9);
+}
+
+.btn.equalto {
+  background: rgba(255, 165, 0, 0.9);
+}
